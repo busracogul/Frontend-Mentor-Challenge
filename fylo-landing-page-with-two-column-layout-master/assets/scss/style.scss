@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .logo-wrapper {
+        display: flex;
+    }
+
+    .header-link {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+
+            li {
+                list-style-type: none;
+
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+
+                }
+            }
+        }
+    }
+}
+
+.secure-wrapper {
+    .secure-header {
+        .secure-text-title {
+            font-size: 45px;
+            font-family: 'Raleway' sans-serif;
+            font-weight: 700;
+        }
+
+        .text-comment {
+
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+
+        }
+    }
+
+    .secure-image {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .secure-form {
+        input {
+            width: 250px;
+            padding-left: 10px;
+        }
+
+        button {
+            margin-left: 15px;
+            background-color: hsl(224, 93%, 58%);
+            color: #fff;
+            border: none;
+        }
+    }
+}
+
+.blog-card-wrapper {
+    .blog-desc {
+        &-title {
+            font-size: 38px;
+            font-family: 'Raleway' sans-serif;
+            font-weight: 700;
+        }
+
+        &-texts {
+            font-family: 'Open Sans', sans-serif;
+
+
+        }
+
+        &-detail-link {
+            display: flex;
+            color: hsl(170, 45%, 43%);
+            border-bottom: 1px hsl(170, 45%, 43%) solid;
+        }
+
+    }
+
+    .blog-comment-wrapper {}
+
+    .blog-image {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
