@@ -3,17 +3,34 @@
 .header-wrapper {
     margin-top: 50px;
 
-    .header-link {
+    .logo-wrapper {
+        img {
 
+            @media (max-width: 768px) {
+
+                width: 80%;
+                margin-top: 15px;
+
+
+            }
+        }
+    }
+
+    .header-link {
+        margin-right: 0px;
 
         ul {
             display: flex;
-            gap: 35px;
+            gap: 15px;
+
+            @media (min-width: 768px) {
+                gap: 35px;
+            }
+
 
             li {
                 font-family: 'Open Sans', sans-serif;
                 list-style: none;
-
 
                 a {
                     text-decoration: none;
@@ -36,7 +53,6 @@
 
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
-
         }
     }
 
@@ -50,13 +66,25 @@
     }
 
     .secure-form {
+
         input {
-            width: 250px;
+            width: 300px;
+            border-radius: 5px;
             padding-left: 10px;
+
+            @media (min-width: 768px) {
+                width: 250px;
+            }
         }
 
         button {
-            margin-left: 15px;
+            width: 100%;
+            border-radius: 5px;
+
+            @media (min-width: 768px) {
+                margin-left: 15px;
+            }
+
             background-color: hsl(224, 93%, 58%);
             color: #fff;
             border: none;
@@ -70,13 +98,11 @@
 
 .bg-blog-card-wrapper {
     overflow: hidden;
-
 }
 
 .blog-card-wrapper {
     background-color: hsl(240, 75%, 98%);
     padding-bottom: 80px;
-
 
     .blog-desc {
 
@@ -88,8 +114,6 @@
 
         &-texts {
             font-family: 'Open Sans', sans-serif;
-
-
         }
 
         &-detail-link {
@@ -101,17 +125,12 @@
                 opacity: 0.6;
             }
         }
-
     }
 
     .blog-comment-wrapper {
-
         max-width: 330px;
         border: 1px solid hsl(240, 75%, 98%);
         box-shadow: 0 0 12px 2px hsl(0, 0%, 75%);
-
-
-        &-quotes {}
 
         &-text {
             font-family: 'Open Sans', sans-serif;
@@ -123,14 +142,11 @@
             img {
                 width: 15%;
                 border-radius: 50%;
-
             }
 
             &-title {
                 font-family: 'Open Sans', sans-serif;
                 font-size: 14px;
-
-
 
                 &-name {
                     font-weight: bold;
@@ -162,13 +178,12 @@
 
     &-form {
         input {
-            width: 450px;
+            width: 80%;
             border: #fff solid 1px;
             border-radius: 5px;
         }
 
         button {
-
             background-color: hsl(224, 93%, 58%);
             color: #fff;
             border: none;
@@ -180,13 +195,11 @@
     }
 }
 
-
 .footer-wrapper {
     background-color: hsl(243, 87%, 12%);
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-
-
+    padding: 50px;
 
     &-logo {
         padding: 0;
@@ -198,11 +211,7 @@
 
         .menu-section {
             padding: 0;
-
-
         }
-
-
 
         .menu-communication {
             .menu-phone {
@@ -210,7 +219,6 @@
                 img {
                     margin-right: 10px;
                 }
-
             }
 
             .menu-email {
@@ -222,12 +230,10 @@
             }
         }
 
-
         ul {
             list-style: none;
             padding: 0;
             margin: 0;
-
 
             li {
                 margin-top: 10px;
@@ -241,8 +247,6 @@
                     }
                 }
             }
-
-
         }
 
         .social-media-icon {
@@ -262,12 +266,7 @@
                         fill: hsl(224, 93%, 58%);
                     }
                 }
-
-
             }
-
-
-
         }
     }
 }
