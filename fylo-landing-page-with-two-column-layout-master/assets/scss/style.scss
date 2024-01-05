@@ -1,30 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Raleway:wght@400;700&display=swap');
 
 .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-
-    .logo-wrapper {
-        display: flex;
-    }
+    margin-top: 50px;
 
     .header-link {
-        display: flex;
-        justify-content: space-between;
+
 
         ul {
             display: flex;
-            justify-content: space-between;
-            gap: 15px;
+            gap: 35px;
 
             li {
-                list-style-type: none;
+                font-family: 'Open Sans', sans-serif;
+                list-style: none;
 
 
                 a {
                     text-decoration: none;
                     color: #000;
-
                 }
             }
         }
@@ -67,12 +60,26 @@
             background-color: hsl(224, 93%, 58%);
             color: #fff;
             border: none;
+
+            &:hover {
+                opacity: 0.6;
+            }
         }
     }
 }
 
+.bg-blog-card-wrapper {
+    overflow: hidden;
+
+}
+
 .blog-card-wrapper {
+    background-color: hsl(240, 75%, 98%);
+    padding-bottom: 80px;
+
+
     .blog-desc {
+
         &-title {
             font-size: 38px;
             font-family: 'Raleway' sans-serif;
@@ -86,14 +93,51 @@
         }
 
         &-detail-link {
-            display: flex;
+            display: inline-block;
             color: hsl(170, 45%, 43%);
             border-bottom: 1px hsl(170, 45%, 43%) solid;
+
+            &:hover {
+                opacity: 0.6;
+            }
         }
 
     }
 
-    .blog-comment-wrapper {}
+    .blog-comment-wrapper {
+
+        max-width: 330px;
+        border: 1px solid hsl(240, 75%, 98%);
+        box-shadow: 0 0 12px 2px hsl(0, 0%, 75%);
+
+
+        &-quotes {}
+
+        &-text {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        &-person {
+            display: flex;
+
+            img {
+                width: 15%;
+                border-radius: 50%;
+
+            }
+
+            &-title {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+
+
+
+                &-name {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 
     .blog-image {
         overflow: hidden;
@@ -105,8 +149,128 @@
     }
 }
 
+.access-blog-card-wrapper {
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    &-title {
+        font-size: 38px;
+    }
+
+    &-form {
+        input {
+            width: 450px;
+            border: #fff solid 1px;
+            border-radius: 5px;
+        }
+
+        button {
+
+            background-color: hsl(224, 93%, 58%);
+            color: #fff;
+            border: none;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
 
 
+.footer-wrapper {
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+
+
+    &-logo {
+        padding: 0;
+        filter: brightness(0) invert(1);
+    }
+
+    &-menu {
+        display: contents;
+
+        .menu-section {
+            padding: 0;
+
+
+        }
+
+
+
+        .menu-communication {
+            .menu-phone {
+
+                img {
+                    margin-right: 10px;
+                }
+
+            }
+
+            .menu-email {
+                margin-top: 10px;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+
+            li {
+                margin-top: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+
+                    &:hover {
+                        color: hsl(238, 22%, 44%);
+                    }
+                }
+            }
+
+
+        }
+
+        .social-media-icon {
+            display: flex;
+
+            a {
+                margin-right: 10px;
+
+                svg {
+                    border-radius: 50%;
+                    padding: 8px;
+                    border: 1px #fff solid;
+
+                    &:hover {
+                        color: hsl(224, 93%, 58%);
+                        border: 1px hsl(224, 93%, 58%) solid;
+                        fill: hsl(224, 93%, 58%);
+                    }
+                }
+
+
+            }
+
+
+
+        }
+    }
+}
 
 .attribution {
     font-size: 11px;
